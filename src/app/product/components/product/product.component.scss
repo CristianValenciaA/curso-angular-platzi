@@ -1,0 +1,51 @@
+:host {
+  margin: 10px;
+}
+img {
+  max-width: 100%;
+}
+
+.crop-image {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50&);
+    max-width: 100%;
+  }
+}
+
+button {
+  background-color: #46a049;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  right: 10px;
+  bottom: 10px;
+}
+
+.product {
+  &__title {
+    background-color: #277c2a;
+    text-align: center;
+    font-size: 1.4em;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__description {
+    background-color: var(--color-primary);
+    color: var(--color-title);
+  }
+}
